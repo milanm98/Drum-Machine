@@ -1,0 +1,23 @@
+@import url("https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css");
+
+.center{
+  position: fixed;
+  top : 50%;
+  left : 50%;
+  transform : translate(-50%, -50%);
+}
+
+.title{
+  position: fixed;
+  top : 10%;
+  left : 50%;
+  transform : translate(-50%, -50%);
+}
+
+.background{
+  background-image: url("./drum.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter : blur(4px);
+}
