@@ -13,7 +13,7 @@ Check how it looks here :
 
 Desktop : 
 
-![MobileDM](https://user-images.githubusercontent.com/62839581/113312686-d2c4c900-930a-11eb-81d3-3af61886d9e4.png)
+![DesktopDM](https://user-images.githubusercontent.com/62839581/113312762-e839f300-930a-11eb-9595-0fd73dd0a4bf.png)
 
 
 
