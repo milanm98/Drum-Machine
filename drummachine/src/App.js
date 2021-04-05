@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import useSound from 'use-sound';
 import './App.css';
 
@@ -16,7 +16,30 @@ function App() {
   const [X] = useSound("https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3");
   const [C] = useSound("https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3");
   
+  const handleUserKeyPress = event => {
+    if(event.keyCode === 81) { Q(); }
+    else if(event.keyCode === 87){ W(); }
+    else if(event.keyCode === 69){ E(); }
+
+    else if(event.keyCode === 65){ A(); }
+    else if(event.keyCode === 83){ S(); }
+    else if(event.keyCode === 68){ D(); }
+
+    else if(event.keyCode === 90){ Z(); }
+    else if(event.keyCode === 88){ X(); }
+    else if(event.keyCode === 67){ C(); }
+  }
+
+  useEffect(() => {
+    window.addEventListener('keydown', handleUserKeyPress);
+
+    return () => {
+      window.removeEventListener('keydown', handleUserKeyPress);
+    };        
+  })
+    
   
+
 
   return (
     <main>
